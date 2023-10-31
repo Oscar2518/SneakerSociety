@@ -1,5 +1,5 @@
-
 package SneakerSociety.ProyectoGrupo3;
+
 import java.util.Locale;
 import org.springframework.context.MessageSource;
 
@@ -13,7 +13,7 @@ import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 
 @Configuration
-public class ProyectConfig implements WebMvcConfigurer{
+public class ProjectConfig implements WebMvcConfigurer{
     //Los siguientes metodos son utilizados para el tema de internacionalizacion 
     
     //LocaleResolver se utiliza para gestionar la configuracion del idioma segun la ubicacion del usuario

@@ -1,3 +1,14 @@
+/*Se crea la base de datos */
+drop schema if exists SneakerSociety;
+drop user if exists usuario_sneaker;
+CREATE SCHEMA SneakerSociety ;
+
+/*Se crea un usuario para la base de datos llamado "usuario_prueba" y tiene la contraseña "Usuario_Clave."*/
+create user 'usuario_sneaker'@'%' identified by 'sneakers_Clave.';
+
+/*Se asignan los prvilegios sobr ela base de datos TechShop al usuario creado */
+grant all privileges on SneakerSociety.* to 'usuario_sneaker'@'%';
+flush privileges;
 /* la tabla de marcas contiene marcas de las tenis*/
 create table SneakerSociety.marca (
   id_marca INT NOT NULL AUTO_INCREMENT,
