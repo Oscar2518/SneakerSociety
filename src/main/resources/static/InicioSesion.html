@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>SneakerSociety</title>
+    </head>
+    <body>
+        <h1>Bienvenido a la Tienda en Línea de SneakerSociety</h1>
+
+       
+    <h2>Registro</h2>
+    <form action="procesar_registro.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br>
+
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required><br>
+
+        <input type="submit" value="Registrarse">
+    </form>
+
+    <h2>Iniciar Sesión</h2>
+    <form action="iniciar_sesion.php" method="post">
+        <label for="correo_login">Correo Electrónico:</label>
+        <input type="email" id="correo_login" name="correo_login" required><br>
+
+        <label for="contrasena_login">Contraseña:</label>
+        <input type="password" id="contrasena_login" name="contrasena_login" required><br>
+
+        <input type="submit" value="Iniciar Sesión">
+    </form>
+</body>
+</html>
