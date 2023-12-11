@@ -27,7 +27,7 @@ create table SneakerSociety.producto (
   precio double,  
   ruta_imagen varchar(1024),
   activo bool,
-  PRIMARY KEY (id_marca),
+  PRIMARY KEY (id_producto),
   foreign key fk_producto_marca (id_marca) references marca(id_marca)  
 )
 ENGINE = InnoDB
